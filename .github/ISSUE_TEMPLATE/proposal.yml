@@ -1,0 +1,78 @@
+name: "SSP Proposal"
+description: "Submit a proposal for SSP work (audit item, mitigation, guideline, policy, tooling, or research)"
+labels: ["proposal", "ssp"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Proposal Title
+      description: Short, descriptive title
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What problem does this proposal address? Why now?
+      placeholder: >
+        Provide context, background, affected components (file format, library,
+        extensions, toolchain, operations, privacy, supply chain).
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is in scope? What is explicitly out of scope?
+      placeholder: >
+        Define technical and non-technical boundaries.
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Proposed Deliverables
+      description: What concrete outputs should be produced?
+      placeholder: >
+        Examples: audit report section, threat model extension, checklist,
+        code changes, documentation, governance proposal, test plan.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected Impact
+      description: What improvement to HDF5 SSP posture will this deliver?
+      placeholder: >
+        Consider: severity reduction, mitigation of known CVEs, secure defaults,
+        compliance alignment, ecosystem adoption, supply chain hardening.
+    validations:
+      required: true
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks / Dependencies
+      description: Identify technical, operational, or community risks.
+      placeholder: >
+        Dependencies on HDF5 releases, ecosystem tooling, maintainers, resources, etc.
+
+  - type: textarea
+    id: plan
+    attributes:
+      label: Proposed Plan & Timeline
+      description: How would this work be sequenced?
+      placeholder: >
+        Phases, milestones, estimated effort, review points.
+
+  - type: input
+    id: proposer
+    attributes:
+      label: Proposer(s)
+      description: GitHub handles or full names
+    validations:
+      required: true
