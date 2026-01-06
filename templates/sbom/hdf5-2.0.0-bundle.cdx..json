@@ -1,0 +1,85 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.6",
+    "serialNumber": "urn:uuid:f314200e-75c7-4bd3-9d90-10b5a0a36ba2",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2025-12-23T00:00:00Z",
+        "component": {
+            "bom-ref": "pkg:generic/hdfgroup/hdf5@2.0.0",
+            "type": "library",
+            "name": "HDF5",
+            "version": "2.0.0",
+            "purl": "pkg:generic/hdfgroup/hdf5@2.0.0",
+            "externalReferences": [
+                {
+                    "type": "bom",
+                    "url": "https://sbom.example.org/hdf5/2.0.0/hdf5-2.0.0-core.cdx.json",
+                    "comment": "Core HDF5 library SBOM fragment (no optionals). Import whenever you link/lib-install HDF5.",
+                    "hashes": [
+                        {
+                            "alg": "SHA-256",
+                            "content": "0000000000000000000000000000000000000000000000000000000000000000"
+                        }
+                    ]
+                },
+                {
+                    "type": "bom",
+                    "url": "https://sbom.example.org/hdf5/2.0.0/hdf5-2.0.0-compression.cdx.json",
+                    "comment": "Optional compression libraries + HDF5 build wiring. Import only if your HDF5 build enables compression filters that depend on external libs.",
+                    "hashes": [
+                        {
+                            "alg": "SHA-256",
+                            "content": "0000000000000000000000000000000000000000000000000000000000000000"
+                        }
+                    ]
+                },
+                {
+                    "type": "bom",
+                    "url": "https://sbom.example.org/hdf5/2.0.0/hdf5-2.0.0-parallel.cdx.json",
+                    "comment": "MPI/Parallel HDF5 features. Import only if built/used with MPI (parallel HDF5).",
+                    "hashes": [
+                        {
+                            "alg": "SHA-256",
+                            "content": "0000000000000000000000000000000000000000000000000000000000000000"
+                        }
+                    ]
+                },
+                {
+                    "type": "bom",
+                    "url": "https://sbom.example.org/hdf5/2.0.0/hdf5-2.0.0-ros3.cdx.json",
+                    "comment": "ROS3/VOL connector support. Import only if your build enables/ships ROS3 functionality.",
+                    "hashes": [
+                        {
+                            "alg": "SHA-256",
+                            "content": "0000000000000000000000000000000000000000000000000000000000000000"
+                        }
+                    ]
+                },
+                {
+                    "type": "bom",
+                    "url": "https://sbom.example.org/hdf5/2.0.0/hdf5-2.0.0-plugins.cdx.json",
+                    "comment": "Dynamically-loaded HDF5 plugins. Import only if you ship/allow runtime plugin loading (or distribute plugin artifacts).",
+                    "hashes": [
+                        {
+                            "alg": "SHA-256",
+                            "content": "0000000000000000000000000000000000000000000000000000000000000000"
+                        }
+                    ]
+                },
+                {
+                    "type": "bom",
+                    "url": "https://sbom.example.org/hdf5/2.0.0/hdf5-2.0.0-tools.cdx.json",
+                    "comment": "Command-line tools (e.g., h5dump, h5stat). Import only if tools are installed/shipped in your distribution.",
+                    "hashes": [
+                        {
+                            "alg": "SHA-256",
+                            "content": "0000000000000000000000000000000000000000000000000000000000000000"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
