@@ -14,3 +14,22 @@
 | HDF5-SHINES-REL‑04 | Changes that may affect file-format compatibility SHALL undergo explicit compatibility testing and sign-off (see COMP policy). | Compatibility test reports; signoff. | Confirm presence when format-level behavior changes. |
 | HDF5-SHINES-REL‑05 | A deprecation process SHALL exist with documented timelines and migration guidance for breaking changes. | Deprecation doc; migration guide updates.  | Verify notices exist for any removed/deprecated APIs. |
 | HDF5-SHINES-REL‑06 | Release artifacts SHALL be reproducible or independently verifiable to the extent feasible (see BUILD policy). | Build attestation + checksums. | Verify provenance exists and matches released hashes. |
+
+## OSPS crosswalk
+
+See [Open Source Project Security (OSPS) Baseline](https://baseline.openssf.org/versions/devel).
+
+### Status legend
+
+* **covered:** the SHINES control is intended to satisfy that OSPS requirement.
+* **partial:** overlaps, but the evidence pointers don’t confirm all OSPS specifics (or OSPS expects additional policy/automation not visible here).
+* **gap:** no clear OSPS requirement to map to (often means the SHINES control is additional/beyond OSPS, or OSPS has no equivalent).
+
+| HDF5‑SHINES control | Candidate OSPS control IDs (status) | Basis |
+| ------------------- | ----------------------------------- | ----- |
+| HDF5-SHINES-REL‑01 | OSPS-BR-02.01 (partial); OSPS-BR-02.02 (partial) | Release checklist + release manager signoff |
+| HDF5-SHINES-REL‑02 | OSPS-BR-04.01 (covered); OSPS-BR-02.01 (partial) | Changelog + GitHub release notes + PR/issue refs |
+| HDF5-SHINES-REL‑03 | OSPS-BR-04.01 (partial); OSPS-VM-04.01 (partial) | Release notes + advisory links + disclosure record |
+| HDF5-SHINES-REL‑04 | OSPS-QA-06.01 (partial) | Compatibility test logs + CI outputs |
+| HDF5-SHINES-REL‑05 | OSPS-DO-04.01 (partial); OSPS-DO-05.01 (partial) | Migration guides + deprecation policy + announcements |
+| HDF5-SHINES-REL‑06 | OSPS-BR-06.01 (partial); OSPS-DO-03.01 (partial); OSPS-DO-03.02 (partial) | Provenance attestations + reproducibility + checksums |

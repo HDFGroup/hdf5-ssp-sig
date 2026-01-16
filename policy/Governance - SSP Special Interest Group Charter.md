@@ -47,3 +47,19 @@ HDF5 also uses public channels (forum/discussions) for community engagement, whi
 | HDF5-SHINES-GOV‑01 | The SSP SIG SHALL review SSP policies at least annually and record approvals and changes. | Annual review minutes + version history. | Verify last annual review date and outcomes. |
 | HDF5-SHINES-GOV‑02 | The SIG SHALL maintain a security backlog and publish a high-level roadmap (redacted as needed). | Roadmap doc; backlog labels. | Confirm roadmap exists; confirm backlog is active. |
 | HDF5-SHINES-GOV‑03 | The SIG SHALL maintain an audit archive of evidence artifacts and prior audit results (as permitted). | Archive index + retention policy. | Confirm archive exists and is access controlled. |
+
+## OSPS crosswalk
+
+See [Open Source Project Security (OSPS) Baseline](https://baseline.openssf.org/versions/devel).
+
+### Status legend
+
+* **covered:** the SHINES control is intended to satisfy that OSPS requirement.
+* **partial:** overlaps, but the evidence pointers don’t confirm all OSPS specifics (or OSPS expects additional policy/automation not visible here).
+* **gap:** no clear OSPS requirement to map to (often means the SHINES control is additional/beyond OSPS, or OSPS has no equivalent).
+
+| HDF5‑SHINES control | Candidate OSPS control IDs (status) | Basis |
+| ------------------- | ----------------------------------- | ----- |
+| HDF5-SHINES-GOV‑01 | OSPS-GV-02.01 (partial) | Annual policy review minutes + version history |
+| HDF5-SHINES-GOV‑02 | OSPS-GV-02.01 (partial) | Security roadmap + backlog labels + deliverables tracking |
+| HDF5-SHINES-GOV‑03 | — (gap) | Audit archive index + retention/access controls |
