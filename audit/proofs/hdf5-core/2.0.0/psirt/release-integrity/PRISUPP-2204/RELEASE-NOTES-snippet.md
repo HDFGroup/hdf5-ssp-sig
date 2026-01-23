@@ -2,18 +2,18 @@
 
 Some users observed that the checksum of the **HDF Group source tarball** for **HDF5 `<RELEASE_VERSION>`** differs from the checksum of the **GitHub auto-generated “Source code” archive** for the same tag.
 
-## Canonical source artifact
+## Support source artifact
 
-The canonical release source artifact is the HDF Group tarball:
+The support release source artifact is the HDF Group tarball:
 
-- `<CANONICAL_TARBALL_URL>`
+- `<SUPPORT_TARBALL_URL>`
 
 ## Checksums
 
-Canonical tarball:
+Support tarball:
 
-- SHA-256: `<SHA256_CANONICAL>`
-- SHA-512: `<SHA512_CANONICAL>`
+- SHA-256: `<SHA256_SUPPORT>`
+- SHA-512: `<SHA512_SUPPORT>`
 
 GitHub auto-archive (informational):
 
@@ -30,4 +30,4 @@ GitHub auto-archive (informational):
 
 ## Recommendation
 
-For supply-chain verification, prefer the canonical tarball plus published checksums (and any provided signature). GitHub “Source code” archives are provided for convenience and may differ at the byte level even when the underlying code is the same.
+For supply-chain verification, prefer the support tarball plus published checksums (and any provided signature). GitHub “Source code” archives are provided for convenience and may differ at the byte level even when the underlying code is the same.

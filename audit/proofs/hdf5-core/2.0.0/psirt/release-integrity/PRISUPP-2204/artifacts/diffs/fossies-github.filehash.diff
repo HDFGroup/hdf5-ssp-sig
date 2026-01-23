@@ -1,0 +1,15 @@
+--- artifacts/diffs/fossies.file-sha256.txt	2026-01-23 07:42:53.806933276 -0600
++++ artifacts/diffs/github.file-sha256.txt	2026-01-23 07:42:54.616933272 -0600
+@@ -2384,10 +2384,10 @@
+ e5186ab8a0aa6f2224407ac3b8b8071dd4922aa28b56749643cdc220c5071ea1  ./hdf5-2.0.0/java/test/TestH5VL.java
+ b31751c11c06cd7335bf55cd985659833ae352b9fd77837874a7e9ff7cb69398  ./hdf5-2.0.0/java/test/TestH5Z.java
+ b384492d25c6e4a49f371b646d9a81bc0a4b97cf0c66c2f3ed1b35f78a148732  ./hdf5-2.0.0/LICENSE
+-58b457d8e7b9fb213bc7a8e66e8b16b4ee0033b07374038031ee5fa85e38d740  ./hdf5-2.0.0/README.md
++a2b25f33a6d3833a6494c621ca443c7a701ee9e4a27ae82db1b229b3354cfbd0  ./hdf5-2.0.0/README.md
+ 0e819317a675ef49782ef9c7221901d9204e7c358fe367b8635d81bad6eb4ed1  ./hdf5-2.0.0/release_docs/AutotoolsToCMakeOptions.md
+ b626f0585dbb39924c07d609b9f7697bcd30cfe4076fa6a8c3d10351c617ac04  ./hdf5-2.0.0/release_docs/BuildSystemNotes.md
+-f4f9660fc418514f46d02c5105cbd6bdf16f5c2a074425cf483f77580cde45ab  ./hdf5-2.0.0/release_docs/CHANGELOG.md
++9b6640ae6e71adfc0fcbae9da7e7dbb0fa9199bc147363b8b3e2aaee96a39926  ./hdf5-2.0.0/release_docs/CHANGELOG.md
+ 93cd0a823597988d8a2c53a4f123b7c0e817ac9df56d700f7bed01a6e3ad86bb  ./hdf5-2.0.0/release_docs/Cmake_logo.svg
+ 3d82035b109acdaf325b1ca31b328e34d28c3f7c08394d8d852e1fc17b6843cb  ./hdf5-2.0.0/release_docs/HISTORY-1_0-1_8_0.txt
+ 7b6b70b128d6275abb50eaed3bb1ccb7fe47b8cea50c43a531b87456fab63e43  ./hdf5-2.0.0/release_docs/HISTORY-1_10_0-1_12_0.txt

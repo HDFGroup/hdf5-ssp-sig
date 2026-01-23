@@ -10,7 +10,7 @@
 
 A checksum mismatch was reported between:
 
-- the **HDF Group canonical source tarball** for HDF5 <RELEASE_VERSION>, and
+- the **HDF Group support source tarball** for HDF5 <RELEASE_VERSION>, and
 - the **GitHub auto-generated “Source code” archive** for tag `<GITHUB_TAG>`.
 
 This record documents the investigation, compares unpacked contents, verifies tag provenance (where possible), and records the final decision.
@@ -18,7 +18,7 @@ This record documents the investigation, compares unpacked contents, verifies ta
 ## 2) Scope
 
 **In scope**
-- Canonical tarball: `<CANONICAL_TARBALL_URL>`  
+- Support tarball: `<SUPPORT_TARBALL_URL>`  
 - GitHub archive: `<GITHUB_ARCHIVE_URL>`  
 - Tag / commit: `<GITHUB_TAG>` → `<COMMIT_SHA>`
 
@@ -41,9 +41,9 @@ Primary evidence artifacts are listed in `EVIDENCE-TABLE.md`, and stored under `
 
 ### 5.1 Checksums
 
-- Canonical tarball SHA-256: `<SHA256_CANONICAL>`
+- Support tarball SHA-256: `<SHA256_SUPPORT>`
 - GitHub archive SHA-256: `<SHA256_GITHUB>`
-- Canonical tarball SHA-512: `<SHA512_CANONICAL>`
+- Support tarball SHA-512: `<SHA512_SUPPORT>`
 - GitHub archive SHA-512: `<SHA512_GITHUB>`
 
 Mismatch: ☐ yes ☐ no
@@ -92,7 +92,7 @@ Decision gate applied:
 **Decision:** `<DECISION>`
 
 Choose one:
-- ☐ Benign packaging variance; canonical artifact is correct; publish explanation.
+- ☐ Benign packaging variance; support artifact is correct; publish explanation.
 - ☐ Replace/pull artifact; re-cut release artifacts; publish advisory.
 - ☐ Further investigation required; tracking issue `<LINK>`.
 
@@ -100,8 +100,8 @@ Choose one:
 
 ## 8) Corrective & preventive actions
 
-- [ ] Make canonical tarball generation deterministic (documented recipe; normalized times/ownership; consistent compression flags).
-- [ ] Publish signed checksum files for canonical artifacts (and document verification steps).
+- [ ] Make support tarball generation deterministic (documented recipe; normalized times/ownership; consistent compression flags).
+- [ ] Publish signed checksum files for support artifacts (and document verification steps).
 - [ ] Add CI job that compares a CI-produced tarball to the published one (fail on unexpected deltas).
 - [ ] Document that GitHub auto-archives are convenience artifacts and may differ byte-for-byte.
 

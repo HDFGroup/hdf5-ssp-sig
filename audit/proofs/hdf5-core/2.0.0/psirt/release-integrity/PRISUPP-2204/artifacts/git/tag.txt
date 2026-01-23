@@ -1,0 +1,21 @@
+commit a6ff8aed236ee1e1deff6415e88b16c42b22f17c
+tree bf4777b770e5326b48e27fa8b1db2c1d874ef52f
+parent 86b106271af18924130343f422f1b412e04b81ee
+author Allen Byrne <byrn@hdfgroup.org> 1762818055 -0600
+committer Allen Byrne <50328838+byrnHDF@users.noreply.github.com> 1762819001 -0600
+
+    Remove problematic v char
+
+diff --git a/.github/workflows/release-files.yml b/.github/workflows/release-files.yml
+index ac522a5f70..681d96fbd2 100644
+--- a/.github/workflows/release-files.yml
++++ b/.github/workflows/release-files.yml
+@@ -250,7 +250,7 @@ jobs:
+           then
+             TAG_NAME_BASE=$(echo "snapshot")
+           else
+-            TAG_NAME_BASE=$(echo "v${{ inputs.use_tag }}")
++            TAG_NAME_BASE=$(echo "${{ inputs.use_tag }}")
+           fi
+           echo "TAG_BASE=$TAG_NAME_BASE" >> $GITHUB_OUTPUT
+         shell: bash
