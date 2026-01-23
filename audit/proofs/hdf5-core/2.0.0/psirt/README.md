@@ -6,6 +6,6 @@
 - Timeline and impact assessment
 - Remediation notes and disclosure coordination
 
-## Placeholder
+## Audits
 
-Replace `PLACEHOLDER.md` with real artifacts for this release.
+- [2026-01-23 Release integrity](./release-integrity/PRISUPP-2204/README.md)
