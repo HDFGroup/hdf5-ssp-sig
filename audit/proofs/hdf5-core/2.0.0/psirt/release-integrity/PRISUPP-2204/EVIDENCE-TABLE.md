@@ -15,13 +15,13 @@
 
 | Control | Requirement / intent | Evidence captured | Where (path / link) | Result | Notes |
 | --- | --- | --- | --- | --- | --- |
-| SHINES-SCM-01 | Provenance of release tags (tag → commit) | `git show --pretty=raw`, `git rev-parse` | `artifacts/git/commit.txt`, `artifacts/git/tag.txt`  | ☑ pass ☐ fail ☐ n/a |  |
-| SHINES-SCM-02 | Tag/commit authenticity (signature verification) | `git verify-tag`, `git verify-commit`, key fingerprints | `artifacts/logs/git-verify.txt` | ☐ pass ☐ fail ☑ n/a |  |
-| SHINES-REL-04 | Checksum publication & verification | `sha256sum.txt`, `sha512sum.txt` | `artifacts/logs/sha256sum.txt`, `artifacts/logs/sha512sum.txt` | ☐ pass ☑ fail |  |
-| SHINES-REL-03 | Reproducible source packaging | Deterministic repack test, normalized tarball checksums | `artifacts/logs/repacked.sha256.txt` | ☑ pass ☐ fail ☐ n/a |  |
-| SHINES-REL-02 | Release artifact completeness | File manifests, tree diff | `artifacts/diffs/*.txt`, `artifacts/diffs/tree.diff` | ☑ pass ☐ fail |  |
-| SHINES-VUL-01 | Integrity finding triage + decision record | This ticket’s timeline + decision log | `SAFE-OSE-evidence.md` | ☐ complete ☐ incomplete |  |
-| SHINES-GOV-02 | Public communication of security-relevant notes | Release notes / advisory link | `<URL/COMMIT>` | ☐ published ☐ not needed |  |
+| SHINES-SCM-01 | Provenance of release tags (tag → commit) | `git show --pretty=raw`, `git rev-parse` | `artifacts/git/commit.txt`, `artifacts/git/tag.txt` | ☑ pass ☐ fail ☐ n/a | |
+| SHINES-SCM-02 | Tag/commit authenticity (signature verification) | `git verify-tag`, `git verify-commit`, key fingerprints | `artifacts/logs/git-verify.txt` | ☐ pass ☐ fail ☑ n/a | |
+| SHINES-REL-04 | Checksum publication & verification | `sha256sum.txt`, `sha512sum.txt` | `artifacts/logs/sha256sum.txt`, `artifacts/logs/sha512sum.txt` | ☐ pass ☑ fail | |
+| SHINES-REL-03 | Reproducible source packaging | Deterministic repack test, normalized tarball checksums | `artifacts/logs/repacked.sha256.txt` | ☑ pass ☐ fail ☐ n/a | |
+| SHINES-REL-02 | Release artifact completeness | File manifests, tree diff | `artifacts/diffs/*.txt`, `artifacts/diffs/tree.diff` | ☑ pass ☐ fail | |
+| SHINES-VUL-01 | Integrity finding triage + decision record | This ticket’s timeline + decision log | `SAFE-OSE-evidence.md` | ☐ complete ☐ incomplete | |
+| SHINES-GOV-02 | Public communication of security-relevant notes | Release notes / advisory link | `<URL/COMMIT>` | ☐ published ☐ not needed | |
 
 ## Key diffs summary
 
