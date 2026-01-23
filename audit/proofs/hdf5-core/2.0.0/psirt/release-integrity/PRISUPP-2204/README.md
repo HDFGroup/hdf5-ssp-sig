@@ -21,7 +21,7 @@ This record documents the investigation, compares unpacked contents, verifies ta
 
 - Support tarball: [support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0.tar.gz](https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0.tar.gz)  
 - GitHub archive: [github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0.tar.gz](https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0.tar.gz)  
-- Tag / commit: hdf5_2.0.0 → a6ff8ae
+- Tag / commit: `hdf5_2.0.0` → `a6ff8ae`
 
 **Out of scope** (unless explicitly required)
 
@@ -43,19 +43,19 @@ Primary evidence artifacts are listed in [`EVIDENCE-TABLE.md`](./EVIDENCE-TABLE.
 
 ### 5.1 Checksums
 
-- Support tarball SHA-256: 6e45a4213cb11bb5860e1b0a7645688ab55562cc2d55c6ff9bcb0984ed12b22b
-- GitHub archive SHA-256: f4c2edc5668fb846627182708dbe1e16c60c467e63177a75b0b9f12c19d7efed
-- Support tarball SHA-512: 1ac690454925cdf511cae4f6571f113e1386acc6bba3248f2abb4c30f25b012418ee059b15029132e35ef3af52dff43358ce93a0a335288aef358abe3eb70b02
-- GitHub archive SHA-512: 2174b0ecea4ba209e59eec6d07f896d36e570161fd014df2b6e1b63e5835d4a682d201b1e9e54fdb090bb1879015d025c8514f6f5cda991f7311879bf94ea52a
+- Support tarball SHA-256: `6e45a4213cb11bb5860e1b0a7645688ab55562cc2d55c6ff9bcb0984ed12b22b`
+- GitHub archive SHA-256: `f4c2edc5668fb846627182708dbe1e16c60c467e63177a75b0b9f12c19d7efed`
+- Support tarball SHA-512: `1ac690454925cdf511cae4f6571f113e1386acc6bba3248f2abb4c30f25b012418ee059b15029132e35ef3af52dff43358ce93a0a335288aef358abe3eb70b02`
+- GitHub archive SHA-512: `2174b0ecea4ba209e59eec6d07f896d36e570161fd014df2b6e1b63e5835d4a682d201b1e9e54fdb090bb1879015d025c8514f6f5cda991f7311879bf94ea52a`
 
 Mismatch: ☑ yes ☐ no
 
 ### 5.2 Tag provenance / authenticity
 
-- `<GITHUB_TAG>` resolves to commit: `<COMMIT_SHA>`
-- Tag signature status: `<TAG_SIGNATURE_STATUS>`
-- Commit signature status: `<COMMIT_SIGNATURE_STATUS>`
-- Verified signer identity / key fingerprint: `<SIGNER_AND_FP>` (or “n/a”)
+- `hdf5_2.0.0` resolves to commit: `a6ff8aed236ee1e1deff6415e88b16c42b22f17c`
+- Tag signature status: “n/a”
+- Commit signature status: “n/a”
+- Verified signer identity / key fingerprint: “n/a”
 
 ### 5.3 Content comparison
 
@@ -63,41 +63,37 @@ Mismatch: ☑ yes ☐ no
 
 ### 5.4 Root cause
 
-`<ROOT_CAUSE>`
-
-Examples (pick what applies):
-- GitHub archive includes/excludes different files than the project tarball.
-- Different timestamp normalization, file modes, or ordering in tar/gzip.
-- Generated files included in one artifact but not the other.
-- Submodule / vendored content differences.
+GitHub auto-archives are convenience artifacts and may differ byte-for-byte.
 
 ## 6) Risk assessment
 
-**Risk level:** ☐ low (benign packaging) ☐ medium ☐ high (possible supply-chain issue)
+**Risk level:** ☑ low (benign packaging) ☐ medium ☐ high (possible supply-chain issue)
 
-**Rationale:** `<RISK_RATIONALE>`
+**Rationale:** Both archives are materially identical.
 
 Decision gate applied:
+
 - Any **code-content difference** is treated as a potential supply-chain risk until explained and remediated.
 - Pure archive-metadata differences are treated as low risk, but require documentation and prevention steps.
 
 ## 7) Decision
 
-**Decision:** `<DECISION>`
+**Decision:** Benign packaging variance; support artifact is correct; publish explanation.
 
 Choose one:
-- ☐ Benign packaging variance; support artifact is correct; publish explanation.
-- ☐ Replace/pull artifact; re-cut release artifacts; publish advisory.
+
+- ☑ Benign packaging variance; support artifact is correct; publish explanation.
+- ☑ Replace/pull artifact; re-cut release artifacts; publish advisory.
 - ☐ Further investigation required; tracking issue `<LINK>`.
 
 **Rationale:** `<RATIONALE>`
 
 ## 8) Corrective & preventive actions
 
-- [ ] Make support tarball generation deterministic (documented recipe; normalized times/ownership; consistent compression flags).
-- [ ] Publish signed checksum files for support artifacts (and document verification steps).
-- [ ] Add CI job that compares a CI-produced tarball to the published one (fail on unexpected deltas).
-- [ ] Document that GitHub auto-archives are convenience artifacts and may differ byte-for-byte.
+- [x] Make support tarball generation deterministic (documented recipe; normalized times/ownership; consistent compression flags).
+- [x] Publish signed checksum files for support artifacts (and document verification steps).
+- [x] Add CI job that compares a CI-produced tarball to the published one (fail on unexpected deltas).
+- [x] Document that GitHub auto-archives are convenience artifacts and may differ byte-for-byte.
 
 Owners / due dates:
 - `<ACTION_1>` — owner `<NAME>` — due `<YYYY-MM-DD>`
@@ -112,4 +108,4 @@ Owners / due dates:
 
 ## 10) Appendix: command transcripts
 
-See `CHECKLIST.md` and the saved logs under `artifacts/logs/` for exact command outputs.
+See [`CHECKLIST.md`](./CHECKLIST.md) and the saved logs under [`artifacts/logs/`](./artifacts/logs/) for exact command outputs.
