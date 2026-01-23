@@ -1,34 +1,36 @@
-# Safe-OSE evidence — PRISUPP-2204 (HDF5 <RELEASE_VERSION>)
+# Summary of HDF5 2.0.0 source-artifact integrity check — PRISUPP-2204
 
-**Title:** HDF5 <RELEASE_VERSION> source-artifact integrity check — PRISUPP-2204  
-**Date:** `<YYYY-MM-DD>`  
-**Owner:** `<NAME>`  
-**Reviewers:** `<NAME(S)>`  
-**Status:** ☐ draft ☐ in review ☐ final  
+**Title:** HDF5 2.0.0 source-artifact integrity check — PRISUPP-2204  
+**Date:** 2026-01-22  
+**Owner:** Gerd Heber  
+**Reviewers:** Scot Breitenfeld, Glenn Song, Larry Knox  
+**Status:** ☑ draft ☐ in review ☐ final  
 
 ## 1) Summary
 
 A checksum mismatch was reported between:
 
-- the **HDF Group support source tarball** for HDF5 <RELEASE_VERSION>, and
-- the **GitHub auto-generated “Source code” archive** for tag `<GITHUB_TAG>`.
+- the **HDF Group support source tarball** for HDF5 2.0.0, and
+- the **GitHub auto-generated “Source code” archive** for tag `hdf5_2.0.0`.
 
 This record documents the investigation, compares unpacked contents, verifies tag provenance (where possible), and records the final decision.
 
 ## 2) Scope
 
 **In scope**
-- Support tarball: `<SUPPORT_TARBALL_URL>`  
-- GitHub archive: `<GITHUB_ARCHIVE_URL>`  
-- Tag / commit: `<GITHUB_TAG>` → `<COMMIT_SHA>`
+
+- Support tarball: [support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0.tar.gz](https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0.tar.gz)  
+- GitHub archive: [github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0.tar.gz](https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0.tar.gz)  
+- Tag / commit: hdf5_2.0.0 → a6ff8ae
 
 **Out of scope** (unless explicitly required)
+
 - Build output reproducibility
 - Third-party mirrored downloads
 
 ## 3) Evidence collected
 
-Primary evidence artifacts are listed in `EVIDENCE-TABLE.md`, and stored under `artifacts/` (downloaded archives, checksum logs, git verification logs, and diffs).
+Primary evidence artifacts are listed in [`EVIDENCE-TABLE.md`](./EVIDENCE-TABLE.md), and stored under [`artifacts/`](./artifacts/) (downloaded archives, checksum logs, git verification logs, and diffs).
 
 ## 4) Methods (what we did)
 
@@ -41,12 +43,12 @@ Primary evidence artifacts are listed in `EVIDENCE-TABLE.md`, and stored under `
 
 ### 5.1 Checksums
 
-- Support tarball SHA-256: `<SHA256_SUPPORT>`
-- GitHub archive SHA-256: `<SHA256_GITHUB>`
-- Support tarball SHA-512: `<SHA512_SUPPORT>`
-- GitHub archive SHA-512: `<SHA512_GITHUB>`
+- Support tarball SHA-256: 6e45a4213cb11bb5860e1b0a7645688ab55562cc2d55c6ff9bcb0984ed12b22b
+- GitHub archive SHA-256: f4c2edc5668fb846627182708dbe1e16c60c467e63177a75b0b9f12c19d7efed
+- Support tarball SHA-512: 1ac690454925cdf511cae4f6571f113e1386acc6bba3248f2abb4c30f25b012418ee059b15029132e35ef3af52dff43358ce93a0a335288aef358abe3eb70b02
+- GitHub archive SHA-512: 2174b0ecea4ba209e59eec6d07f896d36e570161fd014df2b6e1b63e5835d4a682d201b1e9e54fdb090bb1879015d025c8514f6f5cda991f7311879bf94ea52a
 
-Mismatch: ☐ yes ☐ no
+Mismatch: ☑ yes ☐ no
 
 ### 5.2 Tag provenance / authenticity
 
@@ -57,15 +59,7 @@ Mismatch: ☐ yes ☐ no
 
 ### 5.3 Content comparison
 
-**Result:** `<MATCH_RESULT>`
-
-Fill in one of:
-- ☐ Code content matches; differences limited to archive metadata and/or non-semantic packaging differences.
-- ☐ Material differences found in tracked source files (list below).
-
-**Material differences (if any)**
-- `<FILE_1>` — `<DIFF_SUMMARY>`
-- `<FILE_2>` — `<DIFF_SUMMARY>`
+**Result:** Code content matches exactly; differences limited to archive metadata and/or non-semantic packaging differences.
 
 ### 5.4 Root cause
 
