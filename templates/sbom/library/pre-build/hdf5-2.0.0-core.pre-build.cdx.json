@@ -11,15 +11,6 @@
         "phase": "pre-build"
       }
     ],
-    "tools": {
-      "components": [
-        {
-          "type": "application",
-          "name": "__SBOM_TOOL_NAME__",
-          "version": "__SBOM_TOOL_VERSION__"
-        }
-      ]
-    },
     "manufacturer": {
       "name": "The HDF Group"
     },

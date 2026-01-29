@@ -1,0 +1,61 @@
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2026-01-28T00:00:00Z",
+        "tools": [
+            {
+                "name": "sbomgen-hdf5",
+                "version": "0.2.0"
+            }
+        ]
+    },
+    "components": [
+        {
+            "type": "library",
+            "name": "hdf5-plugin-bzip2",
+            "version": "1.0.3",
+            "purl": "pkg:generic/hdf5-plugin-bzip2@1.0.3",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "content": "<sha256-of-so>"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "hdf5.plugin.kind",
+                    "value": "filter"
+                },
+                {
+                    "name": "hdf5.plugin.filter_id",
+                    "value": "307"
+                },
+                {
+                    "name": "build.system",
+                    "value": "CMake 3.29"
+                },
+                {
+                    "name": "build.options",
+                    "value": "-O2 -fPIC"
+                },
+                {
+                    "name": "scm.url",
+                    "value": "https://example.org/hdf5-plugin-bzip2.git"
+                },
+                {
+                    "name": "scm.commit",
+                    "value": "<git-sha>"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-3-Clause"
+                    }
+                }
+            ]
+        }
+    ]
+}
