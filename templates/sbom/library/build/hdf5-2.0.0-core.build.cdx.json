@@ -1,0 +1,119 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.6",
+    "serialNumber": "urn:uuid:a4a88554-aed8-42ef-83f2-f2805e8f12e9",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2026-01-30T22:54:06Z",
+        "lifecycles": [
+            {
+                "phase": "build"
+            }
+        ],
+        "manufacturer": {
+            "name": "The HDF Group"
+        },
+        "supplier": {
+            "name": "The HDF Group"
+        },
+        "component": {
+            "bom-ref": "hdf5:core@2.0.0",
+            "type": "library",
+            "group": "org.hdfgroup",
+            "name": "hdf5",
+            "version": "2.0.0",
+            "description": "HDF5 Library (source/pre-build inventory core profile; optionals excluded)",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-3-Clause"
+                    }
+                }
+            ],
+            "purl": "pkg:generic/hdf5@2.0.0",
+            "properties": [
+                {
+                    "name": "org.hdfgroup.hdf5.sbom.profile",
+                    "value": "core"
+                },
+                {
+                    "name": "org.hdfgroup.hdf5.build.system",
+                    "value": "CMAKE"
+                },
+                {
+                    "name": "org.hdfgroup.build:BUILD_SHARED_LIBS",
+                    "value": "{{ON|OFF}}"
+                },
+                {
+                    "name": "org.hdfgroup.build:BUILD_STATIC_LIBS",
+                    "value": "{{ON|OFF}}"
+                },
+                {
+                    "name": "org.hdfgroup.build:BUILD_TESTING",
+                    "value": "{{ON|OFF}}"
+                },
+                {
+                    "name": "org.hdfgroup.build:CMAKE_BUILD_TYPE",
+                    "value": "{{Release|RelWithDebInfo|Debug|MinSizeRel}}"
+                },
+                {
+                    "name": "org.hdfgroup.build:CMAKE_C_COMPILER_ID",
+                    "value": "{{GNU|Clang|AppleClang|MSVC|Intel|...}}"
+                },
+                {
+                    "name": "org.hdfgroup.build:CMAKE_C_COMPILER_VERSION",
+                    "value": "{{COMPILER_VERSION}}"
+                },
+                {
+                    "name": "org.hdfgroup.build:CFLAGS",
+                    "value": "{{CFLAGS}}"
+                },
+                {
+                    "name": "org.hdfgroup.build:LDFLAGS",
+                    "value": "{{LDFLAGS}}"
+                },
+                {
+                    "name": "org.hdfgroup.install:prefix",
+                    "value": "{{CMAKE_INSTALL_PREFIX}}"
+                },
+                {
+                    "name": "org.hdfgroup.install:bindir",
+                    "value": "{{CMAKE_INSTALL_PREFIX}}/bin"
+                }
+            ]
+        }
+    },
+    "components": [
+        {
+            "bom-ref": "hdf5:core@2.0.0",
+            "type": "library",
+            "group": "org.hdfgroup",
+            "name": "hdf5",
+            "version": "2.0.0",
+            "scope": "required",
+            "purl": "pkg:generic/hdf5@2.0.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-3-Clause"
+                    }
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "bom",
+                    "url": "{{BASE_BOM_URL}}/hdf5-2.0.0-src.pre-build.cdx.json"
+                }
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "ref": "hdf5:core@2.0.0",
+            "dependsOn": [
+                "hdf5:src@2.0.0"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,232 @@
+{
+    "$schema": "https://cyclonedx.org/schema/bom-1.6.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.6",
+    "serialNumber": "urn:uuid:b4e83c2e-c308-4e75-aaec-343b62671bad",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2026-01-30T13:48:12Z",
+        "lifecycles": [
+            {
+                "phase": "build"
+            }
+        ],
+        "component": {
+            "bom-ref": "pkg:generic/hdf5-tools@2.0.0",
+            "type": "application",
+            "name": "hdf5-tools",
+            "version": "2.0.0",
+            "supplier": {
+                "name": "The HDF Group"
+            },
+            "publisher": "The HDF Group",
+            "purl": "pkg:generic/hdf5-tools@2.0.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-3-Clause"
+                    }
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "documentation",
+                    "url": "https://support.hdfgroup.org/documentation/hdf5/latest/_command_tools.html"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "org.hdfgroup.sbom:fragment",
+                    "value": "tools"
+                },
+                {
+                    "name": "org.hdfgroup.build:HDF5_BUILD_TOOLS",
+                    "value": "ON"
+                }
+            ]
+        }
+    },
+    "components": [
+        {
+            "bom-ref": "pkg:generic/hdf5-core@2.0.0",
+            "type": "library",
+            "name": "hdf5-core",
+            "version": "2.0.0",
+            "supplier": {
+                "name": "The HDF Group"
+            },
+            "purl": "pkg:generic/hdf5-core@2.0.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-3-Clause"
+                    }
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "bom",
+                    "url": "{{BASE_BOM_URL}}/hdf5-2.0.0-core.build.cdx.json"
+                }
+            ]
+        },
+        {
+            "bom-ref": "hdf5-tools@2.0.0:lib/hdf5_tools",
+            "type": "library",
+            "name": "hdf5_tools",
+            "version": "2.0.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-3-Clause"
+                    }
+                }
+            ]
+        },
+        {
+            "bom-ref": "hdf5-tools@2.0.0:bin/h5dump",
+            "type": "application",
+            "name": "h5dump",
+            "version": "2.0.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-3-Clause"
+                    }
+                }
+            ]
+        },
+        {
+            "bom-ref": "hdf5-tools@2.0.0:bin/h5stat",
+            "type": "application",
+            "name": "h5stat",
+            "version": "2.0.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-3-Clause"
+                    }
+                }
+            ]
+        },
+        {
+            "bom-ref": "hdf5-tools@2.0.0:bin/h5ls",
+            "type": "application",
+            "name": "h5ls",
+            "version": "2.0.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-3-Clause"
+                    }
+                }
+            ]
+        },
+        {
+            "bom-ref": "hdf5-tools@2.0.0:bin/h5diff",
+            "type": "application",
+            "name": "h5diff",
+            "version": "2.0.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-3-Clause"
+                    }
+                }
+            ]
+        },
+        {
+            "bom-ref": "hdf5-tools@2.0.0:bin/h5copy",
+            "type": "application",
+            "name": "h5copy",
+            "version": "2.0.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-3-Clause"
+                    }
+                }
+            ]
+        },
+        {
+            "bom-ref": "hdf5-tools@2.0.0:bin/h5repack",
+            "type": "application",
+            "name": "h5repack",
+            "version": "2.0.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-3-Clause"
+                    }
+                }
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "ref": "pkg:generic/hdf5-tools@2.0.0",
+            "dependsOn": [
+                "pkg:generic/hdf5-core@2.0.0",
+                "hdf5-tools@2.0.0:lib/hdf5_tools",
+                "hdf5-tools@2.0.0:bin/h5dump",
+                "hdf5-tools@2.0.0:bin/h5stat",
+                "hdf5-tools@2.0.0:bin/h5ls",
+                "hdf5-tools@2.0.0:bin/h5diff",
+                "hdf5-tools@2.0.0:bin/h5copy",
+                "hdf5-tools@2.0.0:bin/h5repack"
+            ]
+        },
+        {
+            "ref": "pkg:generic/hdf5-core@2.0.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "hdf5-tools@2.0.0:lib/hdf5_tools",
+            "dependsOn": [
+                "pkg:generic/hdf5-core@2.0.0"
+            ]
+        },
+        {
+            "ref": "hdf5-tools@2.0.0:bin/h5dump",
+            "dependsOn": [
+                "hdf5-tools@2.0.0:lib/hdf5_tools",
+                "pkg:generic/hdf5-core@2.0.0"
+            ]
+        },
+        {
+            "ref": "hdf5-tools@2.0.0:bin/h5stat",
+            "dependsOn": [
+                "hdf5-tools@2.0.0:lib/hdf5_tools",
+                "pkg:generic/hdf5-core@2.0.0"
+            ]
+        },
+        {
+            "ref": "hdf5-tools@2.0.0:bin/h5ls",
+            "dependsOn": [
+                "hdf5-tools@2.0.0:lib/hdf5_tools",
+                "pkg:generic/hdf5-core@2.0.0"
+            ]
+        },
+        {
+            "ref": "hdf5-tools@2.0.0:bin/h5diff",
+            "dependsOn": [
+                "hdf5-tools@2.0.0:lib/hdf5_tools",
+                "pkg:generic/hdf5-core@2.0.0"
+            ]
+        },
+        {
+            "ref": "hdf5-tools@2.0.0:bin/h5copy",
+            "dependsOn": [
+                "hdf5-tools@2.0.0:lib/hdf5_tools",
+                "pkg:generic/hdf5-core@2.0.0"
+            ]
+        },
+        {
+            "ref": "hdf5-tools@2.0.0:bin/h5repack",
+            "dependsOn": [
+                "hdf5-tools@2.0.0:lib/hdf5_tools",
+                "pkg:generic/hdf5-core@2.0.0"
+            ]
+        }
+    ]
+}

@@ -18,12 +18,12 @@
       "name": "The HDF Group"
     },
     "component": {
-      "bom-ref": "hdf5:core@2.0.0",
+      "bom-ref": "hdf5:src@2.0.0",
       "type": "library",
       "group": "org.hdfgroup",
       "name": "hdf5",
       "version": "2.0.0",
-      "description": "HDF5 Library (source/pre-build inventory for core (= void) build profile)",
+      "description": "HDF5 Library (source/pre-build inventory for void build profile)",
       "licenses": [
         {
           "license": {
@@ -59,7 +59,7 @@
       "properties": [
         {
           "name": "org.hdfgroup.hdf5.sbom.profile",
-          "value": "core"
+          "value": "src"
         },
         {
           "name": "org.hdfgroup.hdf5.build.system",
@@ -78,7 +78,7 @@
   },
   "components": [
     {
-      "bom-ref": "hdf5:core@2.0.0",
+      "bom-ref": "hdf5:src@2.0.0",
       "type": "library",
       "group": "org.hdfgroup",
       "name": "hdf5",
@@ -96,7 +96,7 @@
   ],
   "dependencies": [
     {
-      "ref": "hdf5:core@2.0.0",
+      "ref": "hdf5:src@2.0.0",
       "dependsOn": []
     }
   ]

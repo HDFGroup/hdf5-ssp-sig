@@ -1,0 +1,75 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.6",
+    "serialNumber": "urn:uuid:1804364b-a0a0-4804-aa30-32c90ef56d90",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2026-01-30T23:44:14Z",
+        "lifecycles": [
+            {
+                "phase": "build"
+            }
+        ],
+        "manufacturer": {
+            "name": "The HDF Group"
+        },
+        "supplier": {
+            "name": "The HDF Group"
+        },
+        "component": {
+            "bom-ref": "hdf5:hl@2.0.0",
+            "type": "library",
+            "group": "org.hdfgroup",
+            "name": "hdf5_hl",
+            "version": "2.0.0",
+            "description": "HDF5 High-Level Library (source/pre-build inventory core profile; optionals excluded)",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-3-Clause"
+                    }
+                }
+            ],
+            "purl": "pkg:generic/hdf5_hl@2.0.0",
+            "properties": [
+                {
+                    "name": "org.hdfgroup.hdf5.sbom.profile",
+                    "value": "hl"
+                }
+            ]
+        }
+    },
+    "components": [
+        {
+            "bom-ref": "hdf5:hl@2.0.0",
+            "type": "library",
+            "group": "org.hdfgroup",
+            "name": "hdf5_hl",
+            "version": "2.0.0",
+            "scope": "required",
+            "purl": "pkg:generic/hdf5_hl@2.0.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD-3-Clause"
+                    }
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "bom",
+                    "url": "{{BASE_BOM_URL}}/hdf5-2.0.0-core.build.cdx.json"
+                }
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "ref": "hdf5:hl@2.0.0",
+            "dependsOn": [
+                "hdf5:core@2.0.0"
+            ]
+        }
+    ]
+}
