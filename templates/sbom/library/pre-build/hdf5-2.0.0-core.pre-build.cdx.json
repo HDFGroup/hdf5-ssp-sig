@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:__UUID_CORE_BOM__",
+  "serialNumber": "urn:uuid:dadc796d-8365-4f78-ac94-ab2bede991ac",
   "version": 1,
   "metadata": {
-    "timestamp": "__BOM_TIMESTAMP_RFC3339__",
+    "timestamp": "2026-01-30T12:10:17Z",
     "lifecycles": [
       {
         "phase": "pre-build"
@@ -23,11 +23,11 @@
       "group": "org.hdfgroup",
       "name": "hdf5",
       "version": "2.0.0",
-      "description": "HDF5 Library (source/pre-build inventory for core build profile; optionals excluded)",
+      "description": "HDF5 Library (source/pre-build inventory for core (= void) build profile)",
       "licenses": [
         {
           "license": {
-            "id": "HDF5"
+            "id": "BSD-3-Clause"
           }
         }
       ],
@@ -35,7 +35,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "__HASH_OF_SOURCE_TARBALL_OR_VCS_COMMIT__"
+          "content": "a6ff8aed236ee1e1deff6415e88b16c42b22f17c"
         }
       ],
       "externalReferences": [
@@ -49,7 +49,7 @@
         },
         {
           "type": "release-notes",
-          "url": "https://support.hdfgroup.org/documentation/hdf5/latest/rel_2_0_0.html"
+          "url": "https://support.hdfgroup.org/documentation/hdf5/latest/rel_spec_20.html"
         },
         {
           "type": "documentation",
@@ -63,19 +63,15 @@
         },
         {
           "name": "org.hdfgroup.hdf5.build.system",
-          "value": "__CMAKE_OR_AUTOTOOLS__"
-        },
-        {
-          "name": "org.hdfgroup.hdf5.build.flags",
-          "value": "__INJECT_EXACT_FLAGS_AND_CACHE_ENTRIES_HERE__"
+          "value": "CMAKE"
         },
         {
           "name": "org.hdfgroup.hdf5.source.ref",
-          "value": "__GIT_TAG_OR_COMMIT__"
+          "value": "sha256:f4c2edc5668fb846627182708dbe1e16c60c467e63177a75b0b9f12c19d7efed"
         },
         {
           "name": "org.hdfgroup.hdf5.source.distribution",
-          "value": "__SOURCE_TARBALL_URL_OR_PATH__"
+          "value": "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0.tar.gz"
         }
       ]
     }
@@ -92,7 +88,7 @@
       "licenses": [
         {
           "license": {
-            "id": "HDF5"
+            "id": "BSD-3-Clause"
           }
         }
       ]

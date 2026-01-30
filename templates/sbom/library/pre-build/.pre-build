@@ -1,0 +1,3 @@
+BOM consisting of information obtained prior to a build process and may contain
+source files and development artifacts and manifests. The inventory may need to
+be resolved and retrieved prior to use.
