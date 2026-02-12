@@ -1,0 +1,249 @@
+schema_version: "1.0"
+generated_at_utc: "2026-02-12T00:00:00Z"
+
+subject:
+  project: "HDF5"
+  repo:
+    owner: "HDFGroup"
+    name: "hdf5"
+    url: "https://github.com/HDFGroup/hdf5"
+
+release:
+  version: "2.0.0"
+  tag: "2.0.0"
+  published_date: "2025-11-11"
+  git:
+    tag_ref_url: "https://github.com/HDFGroup/hdf5/tree/2.0.0"
+    release_commit:
+      short: "a6ff8ae"
+      sha: "a6ff8aed236ee1e1deff6415e88b16c42b22f17c"
+      commit_url: "https://github.com/HDFGroup/hdf5/commit/a6ff8aed236ee1e1deff6415e88b16c42b22f17c"
+  locators:
+    github_release_page: "https://github.com/HDFGroup/hdf5/releases/tag/2.0.0"
+    support_release_archive_root: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/"
+    support_release_downloads_index: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/"
+    docs_release_specific_info: "https://support.hdfgroup.org/documentation/hdf5/latest/rel_spec_20.html"
+
+assets:
+  base_urls:
+    github_releases_download_base: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/"
+    support_downloads_base: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/"
+  items:
+    - filename: "hdf5-2.0.0-macos14_clang.dmg"
+      size_mb: 46.80
+      sha256: "deef26dde026ca6a2cae73912b20869799338fc4bb82df9b413967d2edd5033f"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0-macos14_clang.dmg"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0-macos14_clang.dmg"
+
+    - filename: "hdf5-2.0.0-macos14_clang.tar.gz"
+      size_mb: 44.72
+      sha256: "3c703c636d59e9f38ee81c6aa380773fb458bb4b129624db39f53e4d4b72cb01"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0-macos14_clang.tar.gz"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0-macos14_clang.tar.gz"
+
+    - filename: "hdf5-2.0.0-ubuntu-2404_gcc.deb"
+      size_mb: 53.16
+      sha256: "493ec8dd0f88794aab3154d14a4b35cc0b7a80ac57ffb1f5ee42aba0d59331c7"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0-ubuntu-2404_gcc.deb"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0-ubuntu-2404_gcc.deb"
+
+    - filename: "hdf5-2.0.0-ubuntu-2404_gcc.rpm"
+      size_mb: 26.30
+      sha256: "d2c9b04a8dd26bf79c27d482e799b2933e4390824eb29744f2b554f07d8ab21d"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0-ubuntu-2404_gcc.rpm"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0-ubuntu-2404_gcc.rpm"
+
+    - filename: "hdf5-2.0.0-ubuntu-2404_gcc.tar.gz"
+      size_mb: 52.13
+      sha256: "409d00035c4bd110945d5b9eb3f0e7439ce0ad165f9e408831bd7eca67fa6e14"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0-ubuntu-2404_gcc.tar.gz"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0-ubuntu-2404_gcc.tar.gz"
+
+    - filename: "hdf5-2.0.0-ubuntu-2404_gcc_s3.tar.gz"
+      size_mb: 52.45
+      sha256: "9185a71f4ae2f02f956194c54b82fb9c851981b270360a594640d0bad561d8e5"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0-ubuntu-2404_gcc_s3.tar.gz"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0-ubuntu-2404_gcc_s3.tar.gz"
+
+    - filename: "hdf5-2.0.0-ubuntu-2404_intel.tar.gz"
+      size_mb: 51.16
+      sha256: "9b9cd2ae61ca5f72504b4310521390e831b3703774c1f086d0d87b59bb5574c2"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0-ubuntu-2404_intel.tar.gz"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0-ubuntu-2404_intel.tar.gz"
+
+    - filename: "hdf5-2.0.0-win-vs2022_cl.msi"
+      size_mb: 46.05
+      sha256: "1bcb3f4b0554298d5f913a63e974aabf9026b75bb55fd4d186bf1271027cf62e"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0-win-vs2022_cl.msi"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0-win-vs2022_cl.msi"
+
+    - filename: "hdf5-2.0.0-win-vs2022_cl.zip"
+      size_mb: 46.20
+      sha256: "c470d4b1d97bb3b0f692561fe711ba0ed87311d9811b232b821ca337819c2cc2"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0-win-vs2022_cl.zip"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0-win-vs2022_cl.zip"
+
+    - filename: "hdf5-2.0.0-win-vs2022_intel.msi"
+      size_mb: 39.34
+      sha256: "8c625b68cb9b429208391f33b4ae675513c65c226ad3fe2a10226d93b16e2d35"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0-win-vs2022_intel.msi"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0-win-vs2022_intel.msi"
+
+    - filename: "hdf5-2.0.0-win-vs2022_intel.zip"
+      size_mb: 38.96
+      sha256: "5d1d948cdb84d271872f6334b0da8bce3aa51a96c7a2ba9e6cfd11171cb1e7cf"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0-win-vs2022_intel.zip"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0-win-vs2022_intel.zip"
+
+    - filename: "hdf5-2.0.0.doxygen.zip"
+      size_mb: 14.60
+      sha256: "fa83493b05b71242aeef85f4814941f5e432249263838c60a9d97d415b2406c3"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0.doxygen.zip"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0.doxygen.zip"
+
+    - filename: "hdf5-2.0.0.html.abi.reports.tar.gz"
+      size_kb: 13.59
+      sha256: "801b17e7f9eacebcad6da7f5b5edfd17ef59127ef4adebe6db01e8887d5a38ef"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0.html.abi.reports.tar.gz"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0.html.abi.reports.tar.gz"
+
+    - filename: "hdf5-2.0.0.sha256sums.txt"
+      size_kb: 1.55
+      sha256: "1a1d20edfdf2bd57590e22cd05b7a4402efddffbac8c502541539d10ca1f3182"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0.sha256sums.txt"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0.sha256sums.txt"
+
+    - filename: "hdf5-2.0.0.tar.gz"
+      size_mb: 40.07
+      sha256: "f4c2edc5668fb846627182708dbe1e16c60c467e63177a75b0b9f12c19d7efed"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0.tar.gz"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0.tar.gz"
+
+    - filename: "hdf5-2.0.0.zip"
+      size_mb: 42.58
+      sha256: "bbebe6d896b46c35900cfc889afa7a270b1604bf0be9888280a0be3b45563d7a"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5-2.0.0.zip"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5-2.0.0.zip"
+
+    - filename: "hdf5.tar.gz"
+      size_mb: 40.07
+      sha256: "f4c2edc5668fb846627182708dbe1e16c60c467e63177a75b0b9f12c19d7efed"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5.tar.gz"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5.tar.gz"
+
+    - filename: "hdf5.zip"
+      size_mb: 42.58
+      sha256: "bbebe6d896b46c35900cfc889afa7a270b1604bf0be9888280a0be3b45563d7a"
+      urls:
+        github: "https://github.com/HDFGroup/hdf5/releases/download/2.0.0/hdf5.zip"
+        support: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/hdf5.zip"
+
+workflows:
+  actions_root: "https://github.com/HDFGroup/hdf5/actions"
+  pinned_commit_sha: "a6ff8aed236ee1e1deff6415e88b16c42b22f17c"
+  items:
+    - name: "hdf5 dev CI"
+      workflow_file: ".github/workflows/main.yml"
+      urls:
+        actions_workflow: "https://github.com/HDFGroup/hdf5/actions/workflows/main.yml"
+        pinned_blob: "https://github.com/HDFGroup/hdf5/blob/a6ff8aed236ee1e1deff6415e88b16c42b22f17c/.github/workflows/main.yml"
+
+    - name: "Link checker"
+      workflow_file: ".github/workflows/linkchecker.yml"
+      urls:
+        actions_workflow: "https://github.com/HDFGroup/hdf5/actions/workflows/linkchecker.yml"
+        pinned_blob: "https://github.com/HDFGroup/hdf5/blob/a6ff8aed236ee1e1deff6415e88b16c42b22f17c/.github/workflows/linkchecker.yml"
+
+    - name: "Call workflows"
+      workflow_file: ".github/workflows/call-workflows.yml"
+      urls:
+        actions_workflow: "https://github.com/HDFGroup/hdf5/actions/workflows/call-workflows.yml"
+        pinned_blob: "https://github.com/HDFGroup/hdf5/blob/a6ff8aed236ee1e1deff6415e88b16c42b22f17c/.github/workflows/call-workflows.yml"
+
+advisories:
+  provider: "GitHub Advisory Database"
+  items:
+    - ghsa_id: "GHSA-hp87-2chw-7hmc"
+      published_date: "2025-06-19"
+      severity: "critical"
+      urls:
+        advisory: "https://github.com/advisories/GHSA-hp87-2chw-7hmc"
+      cve_ids: ["CVE-2025-6269"]
+      related:
+        repo_issue_or_pr: "https://github.com/HDFGroup/hdf5/issues/5579"
+
+    - ghsa_id: "GHSA-v5x4-36wq-jqfc"
+      published_date: "2025-03-28"
+      severity: "moderate"
+      urls:
+        advisory: "https://github.com/advisories/GHSA-v5x4-36wq-jqfc"
+      cve_ids: ["CVE-2025-2912"]
+
+    - ghsa_id: "GHSA-r9x6-p32f-jfm3"
+      published_date: "2025-06-23"
+      severity: "critical"
+      urls:
+        advisory: "https://github.com/advisories/GHSA-r9x6-p32f-jfm3"
+      cve_ids: []
+      related: {}
+
+    - ghsa_id: "GHSA-8fpg-65fw-rjmf"
+      published_date: "2025-06-29"
+      severity: "moderate"
+      urls:
+        advisory: "https://github.com/advisories/GHSA-8fpg-65fw-rjmf"
+      cve_ids: ["CVE-2025-6858"]
+
+cves:
+  primary_sources:
+    - "https://nvd.nist.gov"
+    - "https://www.cve.org"
+  items:
+    - cve_id: "CVE-2025-6269"
+      urls:
+        nvd: "https://nvd.nist.gov/vuln/detail/CVE-2025-6269"
+        cve_org: "https://www.cve.org/CVERecord?id=CVE-2025-6269"
+        ghsa: "https://github.com/advisories/GHSA-hp87-2chw-7hmc"
+
+    - cve_id: "CVE-2025-2912"
+      urls:
+        nvd: "https://nvd.nist.gov/vuln/detail/CVE-2025-2912"
+        cve_org_search: "https://www.cve.org/CVERecord/SearchResults?query=CVE-2025-2912"
+        repo_issue: "https://github.com/HDFGroup/hdf5/issues/5370"
+        ghsa: "https://github.com/advisories/GHSA-v5x4-36wq-jqfc"
+
+    - cve_id: "CVE-2025-6858"
+      urls:
+        ghsa: "https://github.com/advisories/GHSA-8fpg-65fw-rjmf"
+
+governance:
+  security_overview: "https://github.com/HDFGroup/hdf5/security"
+  pinned_commit_sha: "a6ff8aed236ee1e1deff6415e88b16c42b22f17c"
+  documents:
+    - name: "SECURITY.md"
+      pinned_blob: "https://github.com/HDFGroup/hdf5/blob/a6ff8aed236ee1e1deff6415e88b16c42b22f17c/SECURITY.md"
+    - name: "CODE_OF_CONDUCT.md"
+      pinned_blob: "https://github.com/HDFGroup/hdf5/blob/a6ff8aed236ee1e1deff6415e88b16c42b22f17c/CODE_OF_CONDUCT.md"
+    - name: "CONTRIBUTING.md"
+      pinned_blob: "https://github.com/HDFGroup/hdf5/blob/a6ff8aed236ee1e1deff6415e88b16c42b22f17c/CONTRIBUTING.md"
+
+provenance_notes:
+  checksums_source: "https://support.hdfgroup.org/releases/hdf5/v2_0/v2_0_0/downloads/"
+  release_page_source: "https://github.com/HDFGroup/hdf5/releases/tag/2.0.0"
