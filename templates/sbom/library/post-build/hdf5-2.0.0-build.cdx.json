@@ -1,0 +1,98 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:REPLACE-WITH-UUID",
+  "version": 1,
+
+  "metadata": {
+    "timestamp": "2026-02-19T00:00:00Z",
+    "tools": [
+      {
+        "vendor": "The HDF Group",
+        "name": "HDF5 Build Pipeline",
+        "version": "REPLACE",
+        "externalReferences": [
+          {
+            "type": "build-system",
+            "url": "https://github.com/HDFGroup/REPO/actions/runs/REPLACE"
+          }
+        ]
+      }
+    ],
+    "component": {
+      "type": "library",
+      "name": "hdf5",
+      "version": "REPLACE (e.g., 2.0.0-rc1)",
+      "group": "org.hdfgroup",
+      "purl": "pkg:generic/hdf5@REPLACE",
+      "hashes": [
+        { "alg": "SHA-256", "content": "REPLACE" }
+      ],
+      "licenses": [
+        { "license": { "id": "BSD-3-Clause" } }
+      ],
+      "properties": [
+        { "name": "build.id", "value": "REPLACE" },
+        { "name": "build.git.sha", "value": "REPLACE" },
+        { "name": "build.git.tag", "value": "REPLACE" },
+        { "name": "artifact.type", "value": "static|shared|wheel|sdist" },
+        { "name": "platform.triplet", "value": "REPLACE (e.g., x86_64-linux-gnu)" }
+      ],
+      "externalReferences": [
+        { "type": "distribution", "url": "https://artifacts.example.org/hdf5/REPLACE" },
+        { "type": "vcs", "url": "https://github.com/HDFGroup/hdf5@REPLACE" },
+        { "type": "documentation", "url": "https://docs.hdfgroup.org/hdf5/REPLACE" }
+      ]
+    },
+
+    "manufacture": {
+      "name": "The HDF Group",
+      "url": "https://www.hdfgroup.org"
+    },
+    "supplier": {
+      "name": "The HDF Group",
+      "url": "https://www.hdfgroup.org"
+    }
+  },
+
+  "components": [
+    {
+      "type": "library",
+      "name": "REPLACE (e.g., zlib)",
+      "version": "REPLACE",
+      "purl": "pkg:generic/zlib@REPLACE",
+      "hashes": [
+        { "alg": "SHA-256", "content": "REPLACE" }
+      ],
+      "licenses": [
+        { "license": { "id": "Zlib" } }
+      ],
+      "externalReferences": [
+        { "type": "distribution", "url": "https://REPLACE" },
+        { "type": "vcs", "url": "https://REPLACE" }
+      ],
+      "properties": [
+        { "name": "origin", "value": "source|system|vendored" }
+      ]
+    }
+    /* Add more components (e.g., szip, libaec, OpenSSL, MPI) as needed */
+  ],
+
+  "dependencies": [
+    {
+      "ref": "pkg:generic/hdf5@REPLACE",
+      "dependsOn": [
+        "pkg:generic/zlib@REPLACE"
+        /* more purls */
+      ]
+    }
+  ],
+
+  "properties": [
+    { "name": "provenance.builder", "value": "github-actions|gitlab|local" },
+    { "name": "provenance.slsa.attestation", "value": "REPLACE-URI-OR-DSSE" },
+    { "name": "provenance.reproducible", "value": "true|false" },
+    { "name": "ssp.control-map", "value": "OSPS|NIST800-171|FedRAMP:REPLACE" },
+    { "name": "sbom.fragment", "value": "true" }
+  ]
+}
