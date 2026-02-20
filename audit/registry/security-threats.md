@@ -5,6 +5,8 @@ Risk scoring used: **Severity (1-5) x Likelihood (1-5) = Risk (1-25)**
 Risk bands: **1-5 Low, 6-10 Moderate, 11-15 High, 16-20 Very High, 21-25
 Critical**
 
+See also: [HDF5 Registry Asset Register](./asset-register.md)
+
 ## Threat Register
 
 ### 1. Heap-based buffer overflow
@@ -121,7 +123,6 @@ Top controls (do first):
 - Lock plugin directories so they are root-owned and not writable, and ignore
   environment variables in privileged services.
 - Use signed or verified plugins, or an allowlisted plugin registry.
-
 
 ### 5. External links can cross file boundaries unexpectedly
 
