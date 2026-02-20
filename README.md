@@ -40,7 +40,8 @@ Links to recurring meeting invites, video calls, and notes will be added here on
  
 ## License
  
-Textual content in this repository is provided under the(https://creativecommons.org/licenses/by/4.0/)
+Textual content in this repository is provided under the [Creative Commons 4.0 license
+](https://creativecommons.org/licenses/by/4.0/)
 license unless otherwise noted.
 
 ## Acknowledgment
