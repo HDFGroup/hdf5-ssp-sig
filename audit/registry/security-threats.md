@@ -13,8 +13,7 @@ See also: [HDF5 Registry Asset Register](./asset-register.md)
 
 Type: `Threat`
 
-What can go wrong:
-A crafted HDF5 input can trigger a heap-based buffer overflow, causing a
+What can go wrong: A crafted HDF5 input can trigger a heap-based buffer overflow, causing a
 crash and possible code execution.
 
 Severity: `5`
@@ -22,15 +21,6 @@ Severity: `5`
 Likelihood: `3`
 
 Risk: **15 (High)**
-
-Historical examples:
-
-- [CVE-2025-6516](https://nvd.nist.gov/vuln/detail/CVE-2025-6516): A heap-based buffer overflow in `H5F_addr_decode_len` can be triggered by crafted HDF5 input, leading to crashes and potential code execution.
-- [CVE-2025-2153](https://nvd.nist.gov/vuln/detail/CVE-2025-2153): A heap-based buffer overflow in `H5SM_delete` can be exploited by malicious HDF5 files, resulting in crashes and possible code execution.
-- [CVE-2025-6270](https://nvd.nist.gov/vuln/detail/CVE-2025-6270): A heap-based overflow in `H5FS__sect_find_node` can be triggered by crafted HDF5 input, causing crashes and potential code execution.
-- [CVE-2022-26061](https://nvd.nist.gov/vuln/detail/CVE-2022-26061): A heap-based overflow in `gif2h5` can be triggered by crafted GIF input, leading to crashes and potential code execution.
-- [CVE-2020-10809](https://nvd.nist.gov/vuln/detail/CVE-2020-10809): A heap-based overflow in `gif2h5` can be triggered by crafted GIF input, leading to crashes and potential code execution.
-- [CVE-2019-8396](https://nvd.nist.gov/vuln/detail/CVE-2019-8396): A heap-based overflow in `H5O__layout_encode` can be triggered by crafted HDF5 input during repack, causing crashes and potential code execution.
 
 Top controls (do first):
 
@@ -58,8 +48,7 @@ Top controls (do first):
 
 Type: `Threat`
 
-What can go wrong:
-A crafted HDF5 input can trigger a stack-based overflow, causing a crash and
+What can go wrong: A crafted HDF5 input can trigger a stack-based overflow, causing a crash and
 possible code execution.
 
 Severity: `4`
@@ -67,10 +56,6 @@ Severity: `4`
 Likelihood: `3`
 
 Risk: **12 (High)**
-
-Historical examples:
-
-- [CVE-2025-6857](https://nvd.nist.gov/vuln/detail/CVE-2025-6857): A stack-based overflow in `H5G__node_cmp3` can be triggered by crafted HDF5 input, leading to crashes and potential code execution.
 
 Top controls (do first):
 
@@ -83,18 +68,13 @@ Top controls (do first):
 
 Type: `Threat`
 
-What can go wrong:
-An out-of-bounds read can cause DoS or information disclosure.
+What can go wrong: An out-of-bounds read can cause DoS or information disclosure.
 
 Severity: `4`
 
 Likelihood: `3`
 
 Risk: **12 (High)**
-
-Historical examples:
-
-- [CVE-2018-11205](https://nvd.nist.gov/vuln/detail/CVE-2018-11205): An out-of-bounds read in `H5VM_memcpyvv` can be triggered by crafted HDF5 input, leading to crashes and potential information disclosure.
 
 Top controls (do first):
 
@@ -107,8 +87,7 @@ Top controls (do first):
 
 Type: `Threat`
 
-What can go wrong:
-Environment variables such as `HDF5_PLUGIN_PATH` can control plugin loading,
+What can go wrong: Environment variables such as `HDF5_PLUGIN_PATH` can control plugin loading,
 and plugins are executable code in the I/O path.
 
 Severity: `5`
