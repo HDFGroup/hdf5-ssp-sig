@@ -11,4 +11,4 @@ Each registry entry includes a description of the hazard/threat/exposure, its se
 
 The file `HDF5_CWE_TOP_X.md` contains a mapping of HDF5 issues to relevant [Common Weakness Enumeration (CWE)](https://cwe.mitre.org/index.html) software weaknesses, providing a standardized taxonomy for understanding and addressing common vulnerabilities in the HDF5 ecosystem.
 
-The file `asset-register.md` contains an inventory of critical assets in the HDF5 ecosystem, including software components, data types, and user groups, along with their associated risk profiles and mitigation strategies.
+The file `asset-registry.md` contains an inventory of critical assets in the HDF5 ecosystem, including software components, data types, and user groups, along with their associated risk profiles and mitigation strategies.
