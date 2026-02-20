@@ -1,0 +1,290 @@
+---
+- title: TOP X HDF5 Software Weaknesses based on Common Weakness Enumeration (CWE)
+  url: https://cwe.mitre.org/
+  weaknesses:
+  - id: CWE-787
+    name: Out-of-bounds Write
+    description: This weakness occurs when software writes data to a memory location
+      that is outside the bounds of a buffer, which can lead to buffer overflows and
+      potential exploitation.
+    cve_ids:
+    - CVE-2024-32615
+    - CVE-2024-32608
+    - CVE-2022-25972
+    - CVE-2021-45833
+    - CVE-2021-45830
+    - CVE-2021-37501
+    - CVE-2021-36977
+    - CVE-2020-18494
+    - CVE-2020-18232
+    - CVE-2020-10809
+    - CVE-2018-17439
+    - CVE-2018-17436
+    - CVE-2018-17433
+    - CVE-2018-13876
+    - CVE-2018-13874
+    - CVE-2018-13872
+    - CVE-2018-13871
+    - CVE-2017-17509
+    - CVE-2016-4331
+  - id: CWE-416
+    name: Use After Free
+    description: This weakness occurs when software continues to use a pointer after
+      the memory it points to has been freed, which can lead to undefined behavior
+      and potential exploitation.
+    cve_ids:
+    - CVE-2025-6856
+    - CVE-2025-2913
+    - CVE-2024-32610
+    - CVE-2021-46242
+  - id: CWE-125
+    name: Out-of-bounds Read
+    description: This weakness occurs when software reads data from a memory location
+      that is outside the bounds of a buffer, which can lead to information disclosure
+      or crashes.
+    cve_ids:
+    - CVE-2024-32622
+    - CVE-2024-32614
+    - CVE-2024-32607
+    - CVE-2022-25942
+    - CVE-2020-10811
+    - CVE-2019-9152
+    - CVE-2019-9151
+    - CVE-2019-8398
+    - CVE-2019-8397
+    - CVE-2018-17435
+    - CVE-2018-16438
+    - CVE-2018-14460
+    - CVE-2018-14035
+    - CVE-2018-14034
+    - CVE-2018-14033
+    - CVE-2018-14031
+    - CVE-2018-13875
+    - CVE-2018-13873
+    - CVE-2018-13870
+    - CVE-2018-13868
+    - CVE-2018-13867
+    - CVE-2018-13866
+    - CVE-2018-11206
+    - CVE-2018-11205
+    - CVE-2017-17507
+    - CVE-2017-17506
+  - id: CWE-120
+    name: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')
+    description: This weakness occurs when software copies data into a buffer without
+      checking the size of the input, which can lead to buffer overflows and potential
+      exploitation.
+    cve_ids:
+    - CVE-2024-33876
+    - CVE-2024-33875
+    - CVE-2024-33874
+    - CVE-2024-29166
+    - CVE-2024-29159
+  - id: CWE-476
+    name: NULL Pointer Dereference
+    description: This weakness occurs when software dereferences a pointer that is
+      NULL, which can lead to crashes or other unintended behavior.
+    cve_ids:
+    - CVE-2025-6858
+    - CVE-2025-2926
+    - CVE-2021-46243
+    - CVE-2020-10812
+    - CVE-2020-10810
+    - CVE-2018-17432
+    - CVE-2018-11204
+    - CVE-2018-11202
+    - CVE-2017-17505
+  - id: CWE-121
+    name: Stack-based Buffer Overflow
+    description: This weakness occurs when software writes more data to a buffer located
+      on the stack than it can hold, which can lead to buffer overflows and potential
+      exploitation.
+    cve_ids:
+    - CVE-2025-6857
+    - CVE-2024-29164
+  - id: CWE-502
+    name: Deserialization of Untrusted Data
+    description: This weakness occurs when software deserializes data from an untrusted
+      source without proper validation, which can lead to remote code execution or
+      other security vulnerabilities.
+    cve_ids: []
+  - id: CWE-122
+    name: Heap-based Buffer Overflow
+    description: This weakness occurs when software writes more data to a buffer located
+      on the heap than it can hold, which can lead to buffer overflows and potential
+      exploitation.
+    cve_ids:
+    - CVE-2026-26200
+    - CVE-2025-7069
+    - CVE-2025-7067
+    - CVE-2025-6818
+    - CVE-2025-6816
+    - CVE-2025-6750
+    - CVE-2025-6516
+    - CVE-2025-6270
+    - CVE-2025-6269
+    - CVE-2025-44905
+    - CVE-2025-44904
+    - CVE-2025-2924
+    - CVE-2025-2923
+    - CVE-2025-2915
+    - CVE-2025-2914
+    - CVE-2025-2912
+    - CVE-2025-2310
+    - CVE-2025-2309
+    - CVE-2025-2308
+    - CVE-2025-2153
+    - CVE-2024-33877
+    - CVE-2024-33873
+    - CVE-2024-32624
+    - CVE-2024-32623
+    - CVE-2024-32621
+    - CVE-2024-32620
+    - CVE-2024-32619
+    - CVE-2024-32618
+    - CVE-2024-32617
+    - CVE-2024-32616
+    - CVE-2024-32613
+    - CVE-2024-32612
+    - CVE-2024-32605
+    - CVE-2024-29165
+    - CVE-2024-29163
+    - CVE-2024-29162
+    - CVE-2024-29161
+    - CVE-2024-29160
+    - CVE-2024-29158
+    - CVE-2024-29157
+    - CVE-2022-26061
+  - id: CWE-20
+    name: Improper Input Validation
+    description: This weakness occurs when software does not properly validate input,
+      which can lead to a variety of vulnerabilities including buffer overflows, injection
+      attacks, and more.
+    cve_ids:
+    - CVE-2016-4332
+  - id: CWE-200
+    name: Information Exposure
+    description: This weakness occurs when software exposes sensitive information
+      to an unauthorized actor, which can lead to data breaches and other security
+      incidents.
+    cve_ids:
+    - CVE-2026-1669
+  - id: CWE-770
+    name: Allocation of Resources Without Limits or Throttling
+    description: This weakness occurs when software allocates resources (such as memory,
+      CPU, or network bandwidth) without implementing limits or throttling, which
+      can lead to denial of service or other performance issues.
+    cve_ids:
+    - CVE-2026-0897
+  - id: CWE-22
+    name: Path Traversal
+    description: This weakness occurs when software does not properly validate file
+      paths, which can allow attackers to access files and directories that are outside
+      of the intended scope.
+    cve_ids: []
+  - id: CWE-190
+    name: Integer Overflow or Wraparound
+    description: This weakness occurs when software does not properly handle integer
+      overflow or wraparound conditions, which can lead to unexpected behavior and
+      potential vulnerabilities.
+    cve_ids: []
+  - id: CWE-400
+    name: Uncontrolled Resource Consumption
+    description: This weakness occurs when software does not properly control the
+      consumption of resources, which can lead to denial of service or other performance
+      issues.
+    cve_ids:
+    - CVE-2025-6817
+    - CVE-2018-15671
+  - id: CWE-427
+    name: Uncontrolled Search Path Element
+    description: This weakness occurs when software does not properly control the
+      search path for executable files, which can allow attackers to execute malicious
+      code.
+    cve_ids: []
+  - id: CWE-362
+    name: Concurrent Execution using Shared Resource with Improper Synchronization
+    description: This weakness occurs when software concurrently executes using a
+      shared resource without proper synchronization, which can lead to race conditions
+      and other concurrency-related vulnerabilities.
+    cve_ids: []
+  - id: CWE-401
+    name: Memory Leak
+    description: This weakness occurs when software does not properly release memory
+      that is no longer needed, which can lead to increased memory usage and potential
+      denial of service.
+    cve_ids:
+    - CVE-2025-7068
+  - id: CWE-119
+    name: Improper Restriction of Operations within the Bounds of a Memory Buffer
+    description: This weakness occurs when software does not properly restrict operations
+      to within the bounds of a memory buffer, which can lead to buffer overflows
+      and other memory-related vulnerabilities.
+    cve_ids:
+    - CVE-2025-7069
+    - CVE-2025-7067
+    - CVE-2025-6857
+    - CVE-2025-6856
+    - CVE-2025-6818
+    - CVE-2025-6816
+    - CVE-2025-6750
+    - CVE-2025-6516
+    - CVE-2025-6270
+    - CVE-2025-6269
+    - CVE-2025-2925
+    - CVE-2025-2924
+    - CVE-2025-2923
+    - CVE-2025-2915
+    - CVE-2025-2914
+    - CVE-2025-2913
+    - CVE-2025-2912
+    - CVE-2025-2310
+    - CVE-2025-2309
+    - CVE-2025-2308
+    - CVE-2025-2153
+    - CVE-2019-8396
+    - CVE-2018-13869
+    - CVE-2016-4333
+    - CVE-2016-4330
+  - id: CWE-126
+    name: Buffer Over-read
+    description: This weakness occurs when software reads more data than is allocated
+      for a buffer, which can lead to information disclosure or crashes.
+    cve_ids: []
+  - id: CWE-127
+    name: Buffer Under-read
+    description: This weakness occurs when software reads data from a memory location
+      that is before the start of a buffer, which can lead to information disclosure
+      or crashes.
+    cve_ids: []
+  - id: CWE-131
+    name: Incorrect Calculation of Buffer Size
+    description: This weakness occurs when software miscalculates how much memory
+      is needed for a buffer, which can lead to out-of-bounds reads or writes during
+      parsing or data conversion.
+    cve_ids: []
+  - id: CWE-191
+    name: Integer Underflow (Wrap or Wraparound)
+    description: This weakness occurs when software performs arithmetic that drops
+      below the minimum representable integer value, which can cause unexpected large
+      values, bounds-check bypasses, or memory errors.
+    cve_ids: []
+  - id: CWE-415
+    name: Double Free
+    description: This weakness occurs when software frees the same memory region more
+      than once, which can corrupt allocator state and lead to crashes or potential
+      exploitation.
+    cve_ids:
+    - CVE-2025-2925
+  - id: CWE-789
+    name: Uncontrolled Memory Allocation
+    description: This weakness occurs when software allocates memory based on untrusted
+      or unbounded input values, which can cause denial of service through memory
+      exhaustion.
+    cve_ids: []
+  - id: CWE-704
+    name: Incorrect Type Conversion or Cast
+    description: This weakness occurs when software performs an invalid or unsafe
+      type conversion, which can trigger truncation, sign errors, or incorrect bounds
+      decisions that lead to security issues.
+    cve_ids: []
