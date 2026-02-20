@@ -25,11 +25,11 @@ We welcome participation from:
  
 See:
  
--(./CHARTER.md) — the remit and operating model of the SIG.
--(./GOVERNANCE.md) — roles, decision-making, and lifecycle.
--(./CONTRIBUTING.md) — how to get involved.
--(./SECURITY.md) — coordinated vulnerability disclosure.
--(./policy/README.md) — policies governing HDF5 and other HDF Group software.
+- [`CHARTER.md`](./CHARTER.md) — the remit and operating model of the SIG.
+- [`GOVERNANCE.md`](./GOVERNANCE.md) — roles, decision-making, and lifecycle.
+- [`CONTRIBUTING.md`](./CONTRIBUTING.md) — how to get involved.
+- [`SECURITY.md`](./SECURITY.md) — coordinated vulnerability disclosure.
+- [POLICIES](./policy/README.md) — policies governing HDF5 and other HDF Group software.
  
 ## Meetings
  
