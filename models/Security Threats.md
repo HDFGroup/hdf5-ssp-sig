@@ -12,7 +12,7 @@ This document defines a *security* threat model for the HDF5 ecosystem using the
 - [4) Practical examples (CASSE style)](#4-practical-examples-casse-style)
 - [5) Artifacts to keep in the repository](#5-artifacts-to-keep-in-the-repository)
 - [6) Threat taxonomy aligned with HDF5 SSP SIG vulnerability categories](#6-threat-taxonomy-aligned-with-hdf5-ssp-sig-vulnerability-categories)
-- [7) “Tight” guidance for reviewers](#7-tight-guidance-for-reviewers)
+- [7) Guidance for reviewers](#7-guidance-for-reviewers)
 
 ## 1) Scope and security goals
 
@@ -226,7 +226,7 @@ Use this table to tag each threat (many threats span multiple categories):
 | **SCD** (Supply chain/dist.) | unsigned artifacts, typosquatting, compromised repos, provenance gaps | System, Application |
 | **UNK** (Unknown) | novel vulnerability classes, cross-layer chains | Any |
 
-## 7) “Tight” guidance for reviewers
+## 7) Guidance for reviewers
 
 ### When a change touches parsing or on-disk structures
 
