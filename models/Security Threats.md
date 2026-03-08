@@ -7,7 +7,7 @@ This document defines a *security* threat model for the HDF5 library and file fo
 ## Contents
 
 - [1) Scope and security goals](#1-scope-and-security-goals)
-- [2) CASSE in one page](#2-casse-in-one-page)
+- [2) CASSE model](#2-casse-model)
 - [3) Threat enumeration workflow](#3-threat-enumeration-workflow)
 - [4) Practical examples](#4-practical-examples)
 - [5) Attack register template](#5-attack-register-template)

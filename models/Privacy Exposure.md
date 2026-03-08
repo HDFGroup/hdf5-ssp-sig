@@ -4,17 +4,17 @@ This document defines a practical privacy model for the HDF5 ecosystem. It focus
 
 ## Contents
 
-- [1) Scope and security goals](#1-scope-and-security-goals)
-- [2) HDF5 Privacy Exposure (H5PE) model in one page](#2-hdf5-privacy-exposure-h5pe-model-in-one-page)
+- [1) Scope and protection goals](#1-scope-and-protection-goals)
+- [2) HDF5 Privacy Exposure (H5PE) model](#2-hdf5-privacy-exposure-h5pe-model)
 - [3) Threat enumeration workflow](#3-threat-enumeration-workflow)
 - [4) Practical examples](#4-practical-examples)
 - [5) Exposure register template](#5-exposure-register-template)
 - [6) Threat taxonomy aligned with HDF5 SSP SIG vulnerability categories](#6-threat-taxonomy-aligned-with-hdf5-ssp-sig-vulnerability-categories)
 - [7) Checklists for reviewers](#7-checklists-for-reviewers)
 
-## 1) Scope and security goals
+## 1) Scope and protection goals
 
-The shared outline uses "security goals." In this document, that means the privacy and confidentiality properties that keep HDF5 content from being disclosed, over-retained, or made inferable beyond its intended audience.
+The primary goal is to prevent content stored in HDF5 files from being disclosed, over-retained, or made inferable beyond its intended audience.
 
 ### In scope
 
@@ -47,7 +47,7 @@ The shared outline uses "security goals." In this document, that means the priva
 - **Retention discipline:** avoid privacy loss from logs, temp files, backups, and archives that outlive their purpose.
 - **Reviewability:** make privacy assumptions, residual exposure, and redaction decisions visible to reviewers.
 
-## 2) HDF5 Privacy Exposure (H5PE) model in one page
+## 2) HDF5 Privacy Exposure (H5PE) model
 
 For privacy work, the most useful unit is the exposure chain:
 
@@ -197,7 +197,7 @@ Record each exposure in the register and tag it with one or more SSP categories 
 
 ## 5) Exposure register template
 
-Use this template for entries in the privacy exposure register, including updates to [audit/registry/privacy-exposures.md](../audit/registry/privacy-exposures.md).
+Use this template for entries in the privacy exposure register, including updates to [audit/registry/privacy-exposures](../audit/registry/privacy-exposures).
 
 ```markdown
 ## EXP-###: <short name>
@@ -242,16 +242,16 @@ Use the exposure families below as the privacy vocabulary, then tag each finding
 
 ### Alignment table
 
-| SSP category | How it shows up in a privacy review | Exposure families most often involved |
+| Vulnerability category | How it shows up in a privacy review | Exposure families most often involved |
 | --- | --- | --- |
-| **PRV** | metadata leakage, traceability, insufficient minimization, re-identification risk | P1, P2, P3, P4, P5, P6, P7 |
-| **OPS** | oversharing, weak release review, unsafe retention, artifact sprawl, bad defaults | P4, P5, P6, P7 |
-| **FMT** | references, links, VDS mappings, structural metadata, layout-derived leakage | P2, P5 |
-| **LIB** | debug output, temporary files, metadata handling that exposes more than intended | P2, P6 |
-| **EXT** | plugins or wrappers inject metadata, telemetry, or side artifacts | P4, P6 |
-| **TCD** | converters, test tooling, dependency behavior, CI artifacts | P4, P6 |
-| **SCD** | distribution or packaging changes privacy behavior or republishes unintended artifacts | P4, P6, P7 |
-| **UNK** | novel exposure paths and emergent correlation risks | any |
+| **PRV** (Privacy-specific) | metadata leakage, traceability, insufficient minimization, re-identification risk | P1, P2, P3, P4, P5, P6, P7 |
+| **OPS** (Operational/usage) | oversharing, weak release review, unsafe retention, artifact sprawl, bad defaults | P4, P5, P6, P7 |
+| **FMT** (Format) | references, links, VDS mappings, structural metadata, layout-derived leakage | P2, P5 |
+| **LIB** (Core Library) | debug output, temporary files, metadata handling that exposes more than intended | P2, P6 |
+| **EXT** (Extensions/plugins) | plugins or wrappers inject metadata, telemetry, or side artifacts | P4, P6 |
+| **TCD** (Toolchain/deps) | converters, test tooling, dependency behavior, CI artifacts | P4, P6 |
+| **SCD** (Supply Chain/dist.) | distribution or packaging changes privacy behavior or republishes unintended artifacts | P4, P6, P7 |
+| **UNK** (Unknown) | novel exposure paths and emergent correlation risks | any |
 
 ## 7) Checklists for reviewers
 

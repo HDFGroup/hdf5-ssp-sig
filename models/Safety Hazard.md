@@ -4,8 +4,8 @@ This document defines a practical hazard model for the HDF5 library and file for
 
 ## Contents
 
-- [1) Scope and security goals](#1-scope-and-security-goals)
-- [2) HDF5 Control System (H5CS) model in one page](#2-hdf5-control-system-h5cs-model-in-one-page)
+- [1) Scope and safety goals](#1-scope-and-safety-goals)
+- [2) HDF5 Control System (H5CS) model](#2-hdf5-control-system-h5cs-model)
 - [3) Hazard enumeration workflow](#3-hazard-enumeration-workflow)
 - [4) Practical examples](#4-practical-examples)
 - [5) Hazard register template](#5-hazard-register-template)
