@@ -51,3 +51,31 @@ exclude:
   - vendor
   - .git
   - tests
+  - models/
+  - audit/
+  - templates/
+  - README.md
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - GOVERNANCE.md
+  - DECISION_LOG.md
+  - CHARTER.md
+  - SECURITY.md
+  - "*.sh"
+  # Exclude other policy files (only keep Vulnerability_Disclosure_Policy.md)
+  - "policy/Secure SDLC & Code Review Policy.md"
+  - "policy/Plugin and Extension Governance Policy.md"
+  - "policy/Incident Response & Evidence Retention Policy.md"
+  - "policy/Dependency & Licensing Policy.md"
+  - "policy/README.md"
+  - "policy/Compatibility & Lifecycle Support Policy.md"
+  - "policy/Secure Build, Provenance, & Distribution Policy.md"
+  - "policy/Security Testing & Fuzzing Policy.md"
+  - "policy/Threat Modeling & Security Architecture Policy.md"
+  - "policy/Release & Change Control Policy.md"
+  - "policy/OSPS  -> SHINES Coverage Matrix.md"
+  - "policy/Data Handling & Privacy Policy.md"
+  - "policy/Governance - SSP Special Interest Group Charter.md"
+  - "policy/Secure Configuration & Hardening Policy.md"
+  - "policy/Cryptography & Key Management Policy.md"
+  - "policy/Vulnerability Management & Disclosure (PSIRT) Policy.md"

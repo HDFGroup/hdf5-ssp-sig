@@ -1,5 +1,42 @@
 // Custom styles for HDF5 Security site
 
+// Full-width layout - sidebar on left edge
+.side-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 264px;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #f8fafc;
+  border-right: 1px solid #e2e8f0;
+}
+
+.main {
+  margin-left: 264px;
+  max-width: none;
+  padding: 2rem 3rem;
+}
+
+.main-content-wrap {
+  max-width: 900px;
+}
+
+@media (max-width: 800px) {
+  .side-bar {
+    position: relative;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 1rem;
+  }
+}
+
 // Header styling
 .site-title {
   font-weight: 600 !important;
