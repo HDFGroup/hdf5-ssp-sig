@@ -1,5 +1,13 @@
 // Custom styles for HDF5 Security site
 
+// HDF5 Brand Colors
+$hdf-blue: #0c61a1;
+$hdf-blue-light: #e8f4fc;
+$hdf-blue-medium: #4a90c4;
+$hdf-green: #608239;
+$hdf-green-light: #eef4e8;
+$hdf-green-medium: #8aad5c;
+
 // Full-width layout - sidebar pinned to left edge
 body {
   display: flex !important;
@@ -17,8 +25,8 @@ body {
   max-width: 264px !important;
   padding: 1rem !important;
   overflow-y: auto !important;
-  background-color: #f8fafc !important;
-  border-right: 1px solid #e2e8f0 !important;
+  background-color: $hdf-blue-light !important;
+  border-right: 1px solid darken($hdf-blue-light, 10%) !important;
   z-index: 100;
 }
 
@@ -55,7 +63,7 @@ body {
     max-width: 100% !important;
     min-width: 100% !important;
     border-right: none !important;
-    border-bottom: 1px solid #e2e8f0 !important;
+    border-bottom: 1px solid darken($hdf-blue-light, 10%) !important;
   }
 
   .main {
@@ -68,22 +76,23 @@ body {
 // Header styling
 .site-title {
   font-weight: 600 !important;
+  color: $hdf-blue !important;
 }
 
 // Make the main heading stand out
 .fs-9 {
-  color: #1e293b;
+  color: $hdf-blue;
 }
 
 // Callout boxes - HDF5 branded
 .important-title {
-  border-left-color: #046bd2 !important;
-  background-color: #eff6ff !important;
+  border-left-color: $hdf-blue !important;
+  background-color: $hdf-blue-light !important;
 }
 
 .highlight {
-  background-color: #f0fdf4 !important;
-  border-left: 4px solid #22c55e;
+  background-color: $hdf-green-light !important;
+  border-left: 4px solid $hdf-green;
   padding: 1rem;
   margin: 1rem 0;
 }
@@ -103,12 +112,12 @@ table {
 }
 
 th {
-  background-color: #f1f5f9;
-  color: #1e293b;
+  background-color: $hdf-blue-light;
+  color: $hdf-blue;
   font-weight: 600;
   text-align: left;
   padding: 0.75rem 1rem;
-  border-bottom: 2px solid #046bd2;
+  border-bottom: 2px solid $hdf-blue;
 }
 
 td {
@@ -117,53 +126,53 @@ td {
 }
 
 tr:hover {
-  background-color: #f8fafc;
+  background-color: $hdf-blue-light;
 }
 
 // Links
 a {
-  color: #046bd2;
+  color: $hdf-blue;
 
   &:hover {
-    color: #045cb4;
+    color: darken($hdf-blue, 10%);
   }
 }
 
 // Buttons
 .btn-primary {
-  background-color: #046bd2 !important;
-  border-color: #046bd2 !important;
+  background-color: $hdf-blue !important;
+  border-color: $hdf-blue !important;
 
   &:hover {
-    background-color: #045cb4 !important;
-    border-color: #045cb4 !important;
+    background-color: darken($hdf-blue, 10%) !important;
+    border-color: darken($hdf-blue, 10%) !important;
   }
 }
 
 // Aux links in header
 .aux-nav .aux-nav-list-item a {
-  color: #046bd2;
+  color: $hdf-blue;
 
   &:hover {
-    color: #045cb4;
+    color: darken($hdf-blue, 10%);
   }
 }
 
 // Footer
 .site-footer {
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid darken($hdf-blue-light, 10%);
   color: #64748b;
 }
 
 // Logo container
 .site-logo {
-  max-height: 40px;
+  max-height: 50px;
   margin-right: 0.5rem;
 }
 
-// Scope sections - custom colors
+// Scope sections - custom colors using HDF green
 .text-green-200 {
-  color: #166534;
+  color: $hdf-green;
 }
 
 .text-red-200 {
@@ -172,4 +181,21 @@ a {
 
 .text-red-300 {
   color: #dc2626;
+}
+
+// Navigation active state
+.nav-list-link.active {
+  background-color: $hdf-green-light !important;
+  border-left: 3px solid $hdf-green !important;
+  color: $hdf-green !important;
+}
+
+// Search input
+.search-input {
+  border-color: $hdf-blue-medium !important;
+
+  &:focus {
+    border-color: $hdf-blue !important;
+    box-shadow: 0 0 0 2px $hdf-blue-light !important;
+  }
 }

@@ -10,7 +10,7 @@ baseurl: ""
 color_scheme: hdf5
 
 # Logo
-logo: "/assets/images/hdf5-logo.svg"
+logo: "/assets/images/HDF-transparent.png"
 
 # Navigation
 nav_enabled: true
