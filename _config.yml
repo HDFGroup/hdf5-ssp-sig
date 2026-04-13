@@ -23,7 +23,7 @@ search:
   previews: 3
 
 # Footer
-footer_content: "Copyright &copy; The HDF Group. Distributed under the <a href=\"https://github.com/HDFGroup/hdf5/blob/develop/LICENSE\">BSD License</a>."
+footer_content: "Copyright &copy; 2006 The HDF Group. Distributed under the <a href=\"https://github.com/HDFGroup/hdf5/blob/develop/LICENSE\">BSD License</a>."
 
 # Back to top link
 back_to_top: true
